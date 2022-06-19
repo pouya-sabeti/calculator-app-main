@@ -1,26 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="css/normalizeCss/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaCss/media.css">
+  <title>Pouya sabeti | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="app">
+    <div class="calculator-box">
+      <div class="box">
+        <div class="manitor-top">
+          <div class="manitor-top-top">
+            <div class="manitor-top-top-left">
+              <p>calc</p>
+            </div>
+            <div class="manitor-top-top-right">
+              <p class="theme-text">THEME</p>
+              <div style="display: inline-block;">
+                <div class="radiuo-box">
+                  <div class="hidden">
+                    <div class="item" onclick="change(1 , 5)"></div>
+                    <div class="item" onclick="change(2 , 38)"></div>
+                    <div class="item" onclick="change(3 , 72)"></div>
+                  </div>
+                  <div class="bull"></div>
+                  <div class="addad">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manitor-top-bottom">
+            <div class="monitor">
+              <input class="monitor-input" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="keyboard-bottom">
+          <div class="keyboard-bottom-box">
+            <button id="k">7</button>
+            <button id="k">8</button>
+            <button id="k">9</button>
+            <button id="l" class="blue-backg-key">DEL</button>
+            <button id="k">4</button>
+            <button id="k">5</button>
+            <button id="k">6</button>
+            <button id="k">+</button>
+            <button id="k">1</button>
+            <button id="k">2</button>
+            <button id="k">3</button>
+            <button id="k">-</button>
+            <button id="k">.</button>
+            <button id="k">0</button>
+            <button id="k">/</button>
+            <button id="k">*</button>
+            <button class="reset-key blue-backg-key">RESET</button>
+            <button class="Equal-key red-backg-key">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/pouya-sabeti">Pouya sabeti</a>.
+  </div>
+  <script src="./js/app.js"></script>
 </body>
+
 </html>
