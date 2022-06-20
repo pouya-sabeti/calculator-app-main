@@ -45,32 +45,36 @@
               </div>
             </div>
           </div>
+          <div class="error">
+            <p>Max Length Limit Reached</p>
+          </div>
           <div class="manitor-top-bottom">
             <div class="monitor">
-              <input class="monitor-input" type="text">
+              <p class="math_input">Calculator</p>
+              <input class="monitor-input font_size_50" type="text" placeholder="0" maxlength="23">
             </div>
           </div>
         </div>
         <div class="keyboard-bottom">
           <div class="keyboard-bottom-box">
-            <button id="k">7</button>
-            <button id="k">8</button>
-            <button id="k">9</button>
-            <button id="l" class="blue-backg-key">DEL</button>
-            <button id="k">4</button>
-            <button id="k">5</button>
-            <button id="k">6</button>
-            <button id="k">+</button>
-            <button id="k">1</button>
-            <button id="k">2</button>
-            <button id="k">3</button>
-            <button id="k">-</button>
-            <button id="k">.</button>
-            <button id="k">0</button>
-            <button id="k">/</button>
-            <button id="k">*</button>
-            <button class="reset-key blue-backg-key">RESET</button>
-            <button class="Equal-key red-backg-key">=</button>
+            <button id="k" onclick="calcul(this.innerHTML)">7</button>
+            <button id="k" onclick="calcul(this.innerHTML)">8</button>
+            <button id="k" onclick="calcul(this.innerHTML)">9</button>
+            <button id="l" class="blue-backg-key" onclick="del()">DEL</button>
+            <button id="k" onclick="calcul(this.innerHTML)">4</button>
+            <button id="k" onclick="calcul(this.innerHTML)">5</button>
+            <button id="k" onclick="calcul(this.innerHTML)">6</button>
+            <button id="k" onclick="math_a(this.innerHTML)">+</button>
+            <button id="k" onclick="calcul(this.innerHTML)">1</button>
+            <button id="k" onclick="calcul(this.innerHTML)">2</button>
+            <button id="k" onclick="calcul(this.innerHTML)">3</button>
+            <button id="k" onclick="math_a(this.innerHTML)">-</button>
+            <button id="k" onclick="calcul(this.innerHTML)">.</button>
+            <button id="k" onclick="calcul(this.innerHTML)">0</button>
+            <button id="k" onclick="math_a(this.innerHTML)">/</button>
+            <button id="k" onclick="math_a(this.innerHTML)">*</button>
+            <button class="reset-key blue-backg-key" onclick="reset()">RESET</button>
+            <button class="Equal-key red-backg-key" onclick="Equal()">=</button>
           </div>
         </div>
       </div>
